@@ -10,7 +10,7 @@
         </div>
         <script>
             const queryString = window.loction.search;
-            const urlParams = URLSearchParams(queryString);
+            const urlParams = new URLSearchParams(queryString);
             const queryValue = urlParams.get("query");
 
             const outputDiv = document.getElementById("resultOutput");
