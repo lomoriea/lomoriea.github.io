@@ -22,17 +22,21 @@ table {
 }
 
 th, td {
-    
+    border: 1px solid grey;
+    padding: 12px;
+    text-align: left;
 }
 
 th {
-
+    background-color: darkgrey;
 }
 
 a {
-
+    color: skyblue;
+    text-decoration: none;
+    font-width: bold;
 }
 
 a:hover {
-
+    text-decoration: underline;
 }
