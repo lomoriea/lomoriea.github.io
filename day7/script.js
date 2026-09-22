@@ -22,6 +22,7 @@ function takeDamage() {
         statusText.style.fontweight = "bold";
         
         document.body.style.backgroundColor = "#5a1a1a";
+        
         document.querySelector("button").disabled = true;
         document.querySelector("button").innerText = "Dead";
     }
