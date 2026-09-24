@@ -1,5 +1,6 @@
 let accountMoney = 1000;
 const withdrawlAmount = 20;
+const depositAmount = 20;
 
 function takeMoney() {
     accountMoney = accountMoney - withdrawlAmount;
@@ -29,5 +30,25 @@ function takeMoney() {
 }
 
 function insertMoney() {
+    accountMoney = accountMoney + depositAmount;
 
+    const moneyText = document.getElementById("money-display");
+    const statusText = document.getElementById("status-message");
+
+    moneyText.innerText = accountMoney;
+
+    if(accountMoney >0)
+    {
+        moneyText.innerText = accountMoney;
+        statusText.innerText = "$20 Deposited";
+    }
+    else
+    {
+        moneyText.innerText = 0;
+        statusText.innerText = "You're out of money!";
+        statusText.style.color = "#f83722";
+        statusText.style.fontweight = "bold";
+
+        document.body.style.backgroundColor = "#5a1a1a";
+    }
 }
