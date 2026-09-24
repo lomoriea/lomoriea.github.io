@@ -1,22 +1,22 @@
 let playerHealth = 100;
 const damageAmount = 30;
 
-function takeDamage() {
+function takeMoney() {
     playerHealth = playerHealth - damageAmount;
 
-    const healthText = document.getElementById("health-display");
+    const moneyText = document.getElementById("money-display");
     const statusText = document.getElementById("status-message");
 
     healthText.innerText = playerHealth;
 
     if(playerHealth > 0)
     {
-        healthText.innerText = playerHealth;
+        moneyText.innerText = playerHealth;
         statusText.innerText = "You've been hit!";
     }
     else
     {
-        healthText.innerText = 0;
+        moneyText.innerText = 0;
         statusText.innerText = "Game Over";
         statusText.style.color = "#f83722";
         statusText.style.fontweight = "bold";
