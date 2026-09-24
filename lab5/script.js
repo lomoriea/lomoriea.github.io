@@ -25,7 +25,7 @@ function takeMoney() {
         document.body.style.backgroundColor = "#5a1a1a";
         
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "No more money to withdrawl";
+        document.querySelector("button").innerText = "No more money";
     }
 }
 
@@ -37,10 +37,20 @@ function insertMoney() {
 
     moneyText.innerText = accountMoney;
 
+    moneyText.innerText > 0;
+    statusText.innerText = "Withdrawl or Deposit?";
+    statusText.style.color = "white";
+    statusText.style.fontweight = "bold";
+        
+    document.body.style.backgroundColor = "darkcyan";
+        
+    document.querySelector("button").disabled = false;
+    document.querySelector("button").innerText = "Withdrawl $20";
+
     if(accountMoney >0)
     {
         moneyText.innerText = accountMoney;
-        statusText.innerText = "$20 Deposited";
+        statusText.innerText = "$20 Deposited!";
     }
     else
     {
