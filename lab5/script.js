@@ -1,6 +1,6 @@
-let accountMoney = $100;
-const withdrawlAmount = $20;
-const depositAmount = $20;
+let accountMoney = 100;
+const withdrawlAmount = 20;
+const depositAmount = 20;
 
 function takeMoney() {
     accountMoney = accountMoney - withdrawlAmount;
