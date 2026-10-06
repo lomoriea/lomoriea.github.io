@@ -8,17 +8,18 @@
   </head>
 
   <body>
+    <main>
+      <h1>Carlina Game Day Checklist</h1>
 
-    <h1>Carlina Game Day Checklist</h1>
+      <form id="checklist-form">
+      <label for="item-input">Add an item to your bag:</label>
+      <input type="text" id="item-input" name="item" required>
+      <button type="submit">Add to List</button>
+      </form>
 
-    <p>
-    Add an item to your bag:
-    <input type="text" id="itemInput">
-    <button onclick="addItem()">Add to List</button>
-    </p>
-
-    <ul id="checklist"></ul>
+      <ul id="checklist"></ul>
+      </main>
     
-    <script src="script.js" defer></script>
+      <script src="script.js" defer></script>
   </body>
 </html>
