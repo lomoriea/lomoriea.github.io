@@ -1,19 +1,21 @@
-function addItem() {
-      const input = document.getElementById("itemInput");
-      const item = input.value.trim();
+const form = document.getElementById("checklist-form");
+const input = document.getElementById("item-input");
+const checklist = document.getElementById("checklist");
 
-      if (item !== "") {
-        const listItem = document.createElement("li");
+form.addEventListener("submit", function (event) {
+event.preventDefault();
 
-        listItem.innerHTML = `
-          <label>
-            <input type="checkbox">
-            ${item}
-          </label>
-        `;
+const itemText = input.value.trim();
 
-        document.getElementById("checklist").appendChild(listItem);
+if (itemText !== "") {
+const listItem = document.createElement("li");
 
-        input.value = "";
-      }
-    }
+listItem.textContent = itemText;
+
+checklist.appendChild(listItem);
+
+input.value = "";
+input.focus();
+
+}
+});
