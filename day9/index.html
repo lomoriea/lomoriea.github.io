@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlina Game Day Checklist</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carolina Game Day Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body>
+  <body>
 
-  <h1>Carlina Game Day Checklist</h1>
+    <h1>Carlina Game Day Checklist</h1>
 
-  <p>
+    <p>
     Add an item to your bag:
     <input type="text" id="itemInput">
     <button onclick="addItem()">Add to List</button>
-  </p>
+    </p>
 
-  <ul id="checklist"></ul>
-
-  <script>
-    function addItem() {
-      const input = document.getElementById("itemInput");
-      const item = input.value.trim();
-
-      if (item !== "") {
-        const listItem = document.createElement("li");
-
-        listItem.innerHTML = `
-          <label>
-            <input type="checkbox">
-            ${item}
-          </label>
-        `;
-
-        document.getElementById("checklist").appendChild(listItem);
-
-        input.value = "";
-      }
-    }
-  </script>
-
-</body>
+    <ul id="checklist"></ul>
+    
+    <script src="script.js" defer></script>
+  </body>
 </html>
