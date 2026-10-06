@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlina Game Day Checklist</title>
+</head>
+
+<body>
+
+  <h1>Carlina Game Day Checklist</h1>
+
+  <p>
+    Add an item to your bag:
+    <input type="text" id="itemInput">
+    <button onclick="addItem()">Add to List</button>
+  </p>
+
+  <ul id="checklist"></ul>
+
+  <script>
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const item = input.value.trim();
+
+      if (item !== "") {
+        const listItem = document.createElement("li");
+
+        listItem.innerHTML = `
+          <label>
+            <input type="checkbox">
+            ${item}
+          </label>
+        `;
+
+        document.getElementById("checklist").appendChild(listItem);
+
+        input.value = "";
+      }
+    }
+  </script>
+
+</body>
+</html>
