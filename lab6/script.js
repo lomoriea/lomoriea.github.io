@@ -9,7 +9,7 @@ const dashboardData = {
     },
     academics: {
         title: "Academic Deadlines",
-        text: "Midterms are approaching. The drop/add date without a penalty of "WF" is this Friday at 5:00 PM. Check Blackboard for course schedules."
+        text: "Midterms are approaching. The drop/add date without a penalty of 'WF' is this Friday at 5:00 PM. Check Blackboard for course schedules."
     }
 };
 
