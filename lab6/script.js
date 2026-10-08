@@ -19,8 +19,8 @@ function changeContent(category) {
 
     const selectedData = dashboardData[category];
 
-    contentBox.innerHTML = 
+    contentBox.innerHTML = `
         <h2>${selectedData.title}</h2>
         <p>${selectedData.text}</p>
-        ;
-};
+       ` ;
+}
