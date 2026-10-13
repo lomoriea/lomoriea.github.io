@@ -28,7 +28,7 @@ function buyIntern()
     if(linesOfCode >= internCost)
     {
         linesOfCode = linesOfCode - internCost;
-        interns = interns +1;
+        interns = interns + 1;
         internCost = internCost * 1.5;
         updateScreen();
     }
