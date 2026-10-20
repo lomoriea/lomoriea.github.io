@@ -33,7 +33,7 @@ function saveData()
     let typedText = document.getElementById("data-input").value;
     sessionStorage.setItem("tempData", typedText);
 
-    document.getElemenetById("data-input").value = "";
+    document.getElementById("data-input").value = "";
 }
 
 function loadData()
