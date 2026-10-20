@@ -38,7 +38,7 @@ function saveData()
 
 function loadData()
 {
-    let savedTet = sessionStorage.getItem("tempData");
+    let savedText = sessionStorage.getItem("tempData");
 
     if(savedText !== null)
     {
