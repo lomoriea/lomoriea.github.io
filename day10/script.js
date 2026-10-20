@@ -42,7 +42,7 @@ function loadData()
 
     if(savedText !== null)
     {
-        document.getElemenetById("data").innerText = savedText;
+        document.getElementById("data").innerText = savedText;
     }
     else
     {
