@@ -14,7 +14,7 @@ let managerCost = 200;
 
 function writeCode()
 {
-    linesOfCode = linesOfCode + clickPower;
+    linesOfCode = linesOfCode + clickPower + clickStrength;
     updateScreen();
 }
 
