@@ -6,7 +6,7 @@ let upgradeCost = 50;
 let interns = 0;
 let internCost = 100;
 
-let clickStrength = 1;
+let clickStrength = 0;
 let upgradeMouse = 100;
 
 let managers = 0;
