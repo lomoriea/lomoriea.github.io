@@ -45,7 +45,7 @@ function buyMouse()
     if(linesOfCode >= upgradeMouse)
     {
         linesOfCode = linesOfCode - upgradeMouse;
-        clickStrength = clickpower + clickStrength + 3;
+        clickStrength = clickPower + clickStrength + 3;
         upgradeMouse = upgradeMouse * 1.5;
         updateScreen();
     }
