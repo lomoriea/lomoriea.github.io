@@ -9,6 +9,9 @@ let internCost = 100;
 let clickStrength = 1;
 let upgradeMouse = 100;
 
+let managers = 0;
+let managerCost = 200;
+
 function writeCode()
 {
     linesOfCode = linesOfCode + clickPower;
@@ -48,6 +51,17 @@ function buyMouse()
     }
 }
 
+function buyManager()
+{
+    if(linesOfCode >= managerCost)
+    {
+        linesOfCode = linesOfCode - managerCost;
+        managers = interns * 3;
+        managerCost = managerCost * 1.5;
+        updateScreen();
+    }
+}
+
 function updateScreen()
 {
     document.getElementById("score-display").innerText = linesOfCode + " lines of code";
@@ -60,6 +74,9 @@ function updateScreen()
 
     document.getElementById("mouse-display").innerText = clickStrength;
     document.getElementByid("cost-display-mouse").innerText = upgradeMouse;
+
+    document.getElementById("manager-display").innerText = managers;
+    document.getElementById("cost-display-manager").innerText = managerCost;
 }
 
 setInterval(function() {
@@ -69,5 +86,15 @@ setInterval(function() {
         updateScreen();
     }
 },
+1000
+);
+
+setInterval(function() {
+    if(managers > 0)
+    {
+        linesOfCode = linesOfCode + managers;
+        updateScreen();
+    }
+};
 1000
 );
