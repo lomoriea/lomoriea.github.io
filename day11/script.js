@@ -54,5 +54,5 @@ function endGame()
     targetElement.style.display = "none";
     startButton.disabled = false;
 
-    alert("*WHISTLE* You Scored:" + score);
+    alert("*WHISTLE* You Scored: " + score);
 }
